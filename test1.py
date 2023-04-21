@@ -25,16 +25,6 @@ list_properties_info = []
 list_districts_info = []
 
 
-# # Truy cập trang web
-# html_content = webdriver_adapter.get_html_content(base_url)
-
-# # Tạo đối tượng BeautifulSoup từ nội dung HTML
-# try :
-#     soup = BeautifulSoup(html_content, 'html.parser')
-# except:
-#     print("Can't connect to server url:" + base_url)
-
-
 for one in range(1, 4):
     list_links_base.append(base_url + '/p' + str(one))
 
