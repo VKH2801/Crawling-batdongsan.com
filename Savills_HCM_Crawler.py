@@ -19,7 +19,7 @@ class WebDriverAdapter:
 #Lay noi dung trang web
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
-base_url = 'https://search.savills.com/list?SearchList=Id_1245+Category_RegionCountyCountry~Id_343+Category_RegionCountyCountry&Tenure=GRS_T_B&SortOrder=SO_PCDD&Currency=VND&Period=Week&ResidentialSizeUnit=SquareFeet&LandAreaUnit=Acre&SaleableAreaUnit=SquareFeet&AvailableSizeUnit=SquareFeet&Category=GRS_CAT_RES&LocationKey=vietnam&Shapes=W10&CurrentPage='
+base_url = 'https://search.savills.com/list?SearchList=Id_343+Category_RegionCountyCountry&Tenure=GRS_T_B&SortOrder=SO_PCDD&Currency=GBP&ResidentialSizeUnit=SquareFeet&LandAreaUnit=Acre&SaleableAreaUnit=SquareMeter&Category=GRS_CAT_RES&Shapes=W10&CurrentPage='
 
 
 dong_pattern = re.compile(r'₫')
@@ -28,7 +28,7 @@ list_properties_info = []
 list_districts_info = []
 
 
-for index in range(1, 170) : 
+for index in range(1, 3) : 
     link_index = base_url + str(index)
     # Khởi tạo đối tượng Chrome WebDriver
     webdriver_adapter = WebDriverAdapter(webdriver.Chrome('/path/to/chromedriver'))
@@ -128,5 +128,5 @@ for i in list_properties_info:
         if (i['price'] == 'Price on application'): 
             list_properties_info.pop(list_properties_info.index(i))
 
-with open('list_properties_savills_HCM.json', 'w', encoding='utf-8') as outfile:
+with open('temp_data.json', 'w', encoding='utf-8') as outfile:
     json.dump(list_properties_info, outfile, ensure_ascii=False)
