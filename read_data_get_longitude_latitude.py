@@ -19,12 +19,22 @@ with open('result_temp.json', 'w', encoding='utf-8') as outfile:
             'query': location,
             'limit': 1,
         })
-        conn.request('GET', '/v1/forward?' + params)
+        conn.request('GET', '/v1/forward?{}'.format(params))
         res = conn.getresponse()
         data = res.read()
 
         # Lưu kết quả vào file mới
         json_data = json.loads(data.decode("utf-8"))
+        # latitude = json_data['data'][0]["latitude"]
+        # longitude = json_data['data'][0]["longitude"]
+        # print('Longitude' + str(longitude) + ' Latitude' + str(latitude))
+        # result = {"price": index["price"],
+        #               "size": index["size"],
+        #               "attribute": index['attribute'],
+        #               "address": location,
+        #               "longitude": str(longitude), 
+        #               "latitude": str(latitude) }
+        # list_longitude_latitude.append(result)
         if isinstance(json_data, list) and len(json_data) > 0:
             latitude = json_data['data'][0]["latitude"]
             longitude = json_data['data'][0]["longitude"]
@@ -32,8 +42,8 @@ with open('result_temp.json', 'w', encoding='utf-8') as outfile:
                       "size": index["size"],
                       "attribute": index['attribute'],
                       "address": location,
-                      "longitude": longitude, 
-                      "latitude": latitude }
+                      "longitude": str(longitude), 
+                      "latitude": str(latitude) }
             list_longitude_latitude.append(result)
             json.dump(result, outfile, ensure_ascii=False)
             print(result)
@@ -46,9 +56,10 @@ with open('result_temp.json', 'w', encoding='utf-8') as outfile:
                       "address": location,
                       "longitude": longitude, 
                       "latitude": latitude }
-            list_longitude_latitude.append(result)
+            # list_longitude_latitude.append(result)
             json.dump(result, outfile, ensure_ascii=False)
             print(result)
+            continue
     
     
 with open('list_results_long_latitude_temp.json', 'w', encoding='utf-8') as outfile:

@@ -25,7 +25,7 @@ list_properties_info = []
 list_districts_info = []
 
 
-for one in range(1, 4):
+for one in range(1, 1001):
     list_links_base.append(base_url + '/p' + str(one))
 
 for index in range(len(list_links_base)) : 
