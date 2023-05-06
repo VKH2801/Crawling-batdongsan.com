@@ -28,7 +28,7 @@ list_properties_info = []
 list_districts_info = []
 
 
-for index in range(1, 3) : 
+for index in range(1, 148) : 
     link_index = base_url + str(index)
     # Khởi tạo đối tượng Chrome WebDriver
     webdriver_adapter = WebDriverAdapter(webdriver.Chrome('/path/to/chromedriver'))
