@@ -1,0 +1,178 @@
+
+{
+    "plus_code": {},
+    "results": [
+      {
+        "address_components": [
+          {
+            "long_name": "91 Trung Kính",
+            "short_name": "91 Trung Kính"
+          },
+          {
+            "long_name": " Trung Hòa",
+            "short_name": " Trung Hòa"
+          },
+          {
+            "long_name": " Cầu Giấy",
+            "short_name": " Cầu Giấy"
+          },
+          {
+            "long_name": " Hà Nội",
+            "short_name": " Hà Nội"
+          }
+        ],
+        "formatted_address": "91 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội",
+        "geometry": {
+          "location": {
+            "lat": 21.0137625240001,
+            "lng": 105.798267363
+          }
+        },
+        "place_id": "Hobn8WqBW6rsKtKq2PDrVKp4BJNRtiILxTQbB__muXgRB3v8GRDTfkp_6lc4cbLw/5PUgWrMDrSI/xlqDBt5XA==.ZXhwYW5kMA==",
+        "reference": "o/QzXNc_eBKsOWX6kdbOcABtO4zUQz0lzdK1jpi0R__J2vFKeRAM2VSYo38AfaShP/7qpUhrwc0l/t/AIYwRnQ==.ZXhwYW5kMA==",
+        "plus_code": {
+          "compound_code": "+6DW1G Trung Hòa, Cầu Giấy, Hà Nội",
+          "global_code": "LOC1+6DW1G"
+        },
+        "types": []
+      },
+      {
+        "address_components": [
+          {
+            "long_name": "91 Ngõ 43 Trung Kính",
+            "short_name": "91 Ngõ 43 Trung Kính"
+          },
+          {
+            "long_name": " Trung Hòa",
+            "short_name": " Trung Hòa"
+          },
+          {
+            "long_name": " Cầu Giấy",
+            "short_name": " Cầu Giấy"
+          },
+          {
+            "long_name": " Hà Nội",
+            "short_name": " Hà Nội"
+          }
+        ],
+        "formatted_address": "91 Ngõ 43 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội",
+        "geometry": {
+          "location": {
+            "lat": 21.01178451,
+            "lng": 105.796537474
+          }
+        },
+        "place_id": "ytdKslLHBd1_mSnLu_bQHGu1yZyLeBt9haGgyFDN1EIOy7I9uEQyTmRkyNZL3BRpT_Knj31YK/Irv3KkEIIZqw==.ZXhwYW5kMg==",
+        "reference": "nP7fBjweFzWzkU8gq/ki_xEAF3fpVoZ3aQcfXx4ZRHX7QaQPNBPpNToMKx1KZw09gWUhpnSdXJSLowB4qFlCMg==.ZXhwYW5kMg==",
+        "plus_code": {
+          "compound_code": "+63G73 Trung Hòa, Cầu Giấy, Hà Nội",
+          "global_code": "LOC1+63G73"
+        },
+        "types": []
+      },
+      {
+        "address_components": [
+          {
+            "long_name": "Trung Kính",
+            "short_name": "Trung Kính"
+          },
+          {
+            "long_name": " Trung Hòa",
+            "short_name": " Trung Hòa"
+          },
+          {
+            "long_name": " Cầu Giấy",
+            "short_name": " Cầu Giấy"
+          },
+          {
+            "long_name": " Hà Nội",
+            "short_name": " Hà Nội"
+          }
+        ],
+        "formatted_address": "Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội",
+        "geometry": {
+          "location": {
+            "lat": 21.01200742,
+            "lng": 105.798556266
+          }
+        },
+        "place_id": "4PhN5GTxC3Txq1qu_KZ_Wb0/fTn7CqblD5melLEhPCrWDoxqkBxTsLTWmYCJnM8gAREUdOKZVNHyHTYAelWOZw==.ZXhwYW5kMA==",
+        "reference": "Ltd3mU697w2W10zYKNvWxB6aK8CT45xU8y2B7hzpgt8M0an4e4G3tz7WFP27QH56DCOVFFR1IAT0McC5hJtSmA==.ZXhwYW5kMA==",
+        "plus_code": {
+          "compound_code": "+ALSA Trung Hòa, Cầu Giấy, Hà Nội",
+          "global_code": "LOC1+ALSA"
+        },
+        "types": []
+      },
+      {
+        "address_components": [
+          {
+            "long_name": "95 Trung Kính",
+            "short_name": "95 Trung Kính"
+          },
+          {
+            "long_name": " Trung Hòa",
+            "short_name": " Trung Hòa"
+          },
+          {
+            "long_name": " Cầu Giấy",
+            "short_name": " Cầu Giấy"
+          },
+          {
+            "long_name": " Hà Nội",
+            "short_name": " Hà Nội"
+          }
+        ],
+        "formatted_address": "95 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội",
+        "geometry": {
+          "location": {
+            "lat": 21.0138168300001,
+            "lng": 105.79788971
+          }
+        },
+        "place_id": "mUuwMwTPf5/1WFznDr94rtLvQffNhj1NzWQqDJqgsdUfCqTZdUcHTTav64BxPOC6dSdgZ9WUmwARwQlhmYonvA==.ZXhwYW5kMA==",
+        "reference": "lPHbKnLx64d2Ikp35RrFcdRphjayJn2rjapjNhjPuBmPxB9GzirgM6NT0OH65gG2Mf4qGswZXQ8d6U4XBfltjQ==.ZXhwYW5kMA==",
+        "plus_code": {
+          "compound_code": "+6DW1M Trung Hòa, Cầu Giấy, Hà Nội",
+          "global_code": "LOC1+6DW1M"
+        },
+        "types": []
+      },
+      {
+        "address_components": [
+          {
+            "long_name": "93 Trung Kính",
+            "short_name": "93 Trung Kính"
+          },
+          {
+            "long_name": " Trung Hòa",
+            "short_name": " Trung Hòa"
+          },
+          {
+            "long_name": " Cầu Giấy",
+            "short_name": " Cầu Giấy"
+          },
+          {
+            "long_name": " Hà Nội",
+            "short_name": " Hà Nội"
+          }
+        ],
+        "formatted_address": "93 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội",
+        "geometry": {
+          "location": {
+            "lat": 21.0138434450029,
+            "lng": 105.798052001
+          }
+        },
+        "place_id": "xFchTd18UNmq7/rWipBrI6LtqEcDdReZ8cGV3mxeK4yxmmL7hZat/i8cLBdGhdaeNYFQLk4H5AuP2ntIHfS7EQ==.ZXhwYW5kMA==",
+        "reference": "dMG3Lmo6Rux8NsEd9lwoDGUOH22aZbMdzDiMy1RhS73mM/uA0rZsX2M0y0Wm990nx4PGw1jd54YkUeqLzySwaQ==.ZXhwYW5kMA==",
+        "plus_code": {
+          "compound_code": "+6DW1I Trung Hòa, Cầu Giấy, Hà Nội",
+          "global_code": "LOC1+6DW1I"
+        },
+        "types": []
+      }
+    ],
+    "status": "OK"
+  }
+  
