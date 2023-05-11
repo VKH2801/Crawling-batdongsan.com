@@ -82,7 +82,7 @@ for index in list_properties_average:
     lng = data['results'][0]['geometry']['location']['lng']
 
     result = {
-        "location": location,
+        "location": address,
         "average_price": location_average,
         "geometry": {
             "type": "Point",
@@ -97,4 +97,5 @@ with open('list_properties_average.json', 'w', encoding='utf-8') as f:
     json.dump(list_results, f, ensure_ascii=False)
 
 
-# print(list_properties_average)
+
+print(list_properties_average)
