@@ -1,6 +1,6 @@
 import json
 
-with open('list_properties_copy.json', 'r', encoding='utf-8') as f:
+with open('list_properties.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # with open('list_properties_copy.json', 'w', encoding='utf-8') as f:

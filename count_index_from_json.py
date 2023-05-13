@@ -1,45 +1,49 @@
 import json
 import http.client, urllib.parse
+import requests
 
-with open('list_properties_with_format.json', 'r', encoding='utf-8') as f:
+with open('list_properties.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 
 locations = []
 list_locations_with_longitude_latitude = []
+list_locations = []
 
 for index in data:
     location = index['location']
-    if location not in locations:
-        locations.append(location)
 
-# print(locations)
-API_KEY = 'b35ed365b02974824db234fa58a62426'
-LIMIT_ACCESS = 1
+    # Chuẩn hóa dữ liệu location - xóa dấu '·' và add vào list_locations.
+    if '·' in location:
+        location = location.replace('·', '')
+        list_locations.append(location)
+    
+
+for i in list_locations:
+    if i not in locations:
+        locations.append(i)
+
+print(locations)
+
+domain_URL = 'https://rsapi.goong.io/geocode?address='
+
+API_key = '&api_key=22DfeaveAqw3AHJSXNFVYt4g3lUTlJ91ebcZt18B'
 
 for INDEX in locations:
-    conn = http.client.HTTPConnection('api.positionstack.com')
+    res = requests.get(domain_URL + str(INDEX) + API_key)
 
-    params = urllib.parse.urlencode({
-        'access_key': API_KEY,
-        'query': INDEX,
-        'limit': LIMIT_ACCESS,
-    })
+    response_data = json.loads(res.text)
 
-    conn.request('GET', '/v1/forward?{}'.format(params))
-
-    res = conn.getresponse()
-    data = res.read()
-
-
-    json_data = json.loads(data.decode("utf-8"))
-    print(INDEX + ': ' 'longitude ' + str(json_data['data'][0]["longitude"]) + ', ' + 'latitude ' + str(json_data['data'][0]["latitude"]))
+    # Lấy lat và lng
+    lat = response_data['results'][0]['geometry']['location']['lat']
+    lng = response_data['results'][0]['geometry']['location']['lng']
     
     result = {
         "location": str(INDEX),
-        "longitude": str(json_data['data'][0]["longitude"]),
-        "latitude": str(json_data['data'][0]["latitude"])
+        "longitude": lng,
+        "latitude": lat
     }
+    print(result)
     list_locations_with_longitude_latitude.append(result)
 
 with open('list_locations_with_longitude_latitude_for_batdongsan_com_vn.json', 'w', encoding='utf-8') as f:

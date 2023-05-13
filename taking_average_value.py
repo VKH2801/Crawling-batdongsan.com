@@ -6,7 +6,7 @@ domain_URL = 'https://rsapi.goong.io/geocode?address='
 
 API_key = '&api_key=22DfeaveAqw3AHJSXNFVYt4g3lUTlJ91ebcZt18B'
 
-with open('list_properties_copy.json', 'r', encoding='utf-8') as f:
+with open('list_properties.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 list_properties_average = []
@@ -35,8 +35,7 @@ for i in data:
 
     if isinstance(price, str) and 'Giá thỏa thuận' in price:
         price = 1
-    else:
-        pass
+    
 
 
     # Chuẩn hóa dữ liệu location - xóa dấu '·' và add vào list_locations.
@@ -52,6 +51,7 @@ for i in data:
         }
         list_locations.append(location)
 
+    # Tính giá trị trung bình tại mỗi quận, thành phố tại HCM
     if location in location_average:
         location_average[location]['sum'] += price
         location_average[location]['count'] += 1
@@ -91,11 +91,11 @@ for index in list_properties_average:
             ]
         }
     }
+    print(result)
     list_results.append(result)
 
-with open('list_properties_average.json', 'w', encoding='utf-8') as f:
+with open('list_properties_average2.json', 'w', encoding='utf-8') as f:
     json.dump(list_results, f, ensure_ascii=False)
 
 
 
-print(list_properties_average)

@@ -1,192 +1,92 @@
 [
     {
-        "location": "·Quận 7, Hồ Chí Minh",
-        "longitude": "106.727203",
-        "latitude": "10.735719"
-    },
-    {
-        "location": "·Quận 2, Hồ Chí Minh",
-        "longitude": "106.75975",
-        "latitude": "10.791891"
-    },
-    {
-        "location": "·Quận 9, Hồ Chí Minh",
-        "longitude": "105.812978",
-        "latitude": "21.008044"
-    },
-    {
-        "location": "·Thủ Đức, Hồ Chí Minh",
-        "longitude": "106.77209",
-        "latitude": "10.84863"
-    },
-    {
-        "location": "·Bình Thạnh, Hồ Chí Minh",
-        "longitude": "106.70315",
-        "latitude": "10.808551"
-    },
-    {
-        "location": "·Bình Tân, Hồ Chí Minh",
-        "longitude": "106.63832",
-        "latitude": "10.81691"
-    },
-    {
-        "location": "·Bình Chánh, Hồ Chí Minh",
-        "longitude": "106.66667",
-        "latitude": "10.75"
-    },
-    {
-        "location": "·Hóc Môn, Hồ Chí Minh",
-        "longitude": "106.59533",
-        "latitude": "10.8891"
-    },
-    {
-        "location": "·Quận 1, Hồ Chí Minh",
-        "longitude": "106.698089",
-        "latitude": "10.777353"
-    },
-    {
-        "location": "·Quận 12, Hồ Chí Minh",
-        "longitude": "106.689603",
-        "latitude": "10.775882"
-    },
-    {
-        "location": "·Quận 4, Hồ Chí Minh",
-        "longitude": "106.703296",
-        "latitude": "10.759676"
-    },
-    {
-        "location": "·Gò Vấp, Hồ Chí Minh",
-        "longitude": "106.660342",
-        "latitude": "10.840754"
-    },
-    {
-        "location": "·Tân Phú, Hồ Chí Minh",
-        "longitude": "106.66667",
-        "latitude": "10.75"
-    },
-    {
-        "location": "·Tân Bình, Hồ Chí Minh",
-        "longitude": "106.63832",
-        "latitude": "10.81691"
-    },
-    {
         "location": "Quận 2, Hồ Chí Minh",
-        "longitude": "106.75975",
-        "latitude": "10.791891"
-    },
-    {
-        "location": "Quận 12, Hồ Chí Minh",
-        "longitude": "106.689603",
-        "latitude": "10.775882"
+        "longitude": 106.762024,
+        "latitude": 10.7838
     },
     {
         "location": "Quận 7, Hồ Chí Minh",
-        "longitude": "106.727203",
-        "latitude": "10.735719"
-    },
-    {
-        "location": "Thủ Đức, Hồ Chí Minh",
-        "longitude": "106.77209",
-        "latitude": "10.84863"
-    },
-    {
-        "location": "Tân Phú, Hồ Chí Minh",
-        "longitude": "106.66667",
-        "latitude": "10.75"
-    },
-    {
-        "location": "Bình Tân, Hồ Chí Minh",
-        "longitude": "106.589787",
-        "latitude": "10.752719"
-    },
-    {
-        "location": "Quận 9, Hồ Chí Minh",
-        "longitude": "106.816225",
-        "latitude": "10.823237"
-    },
-    {
-        "location": "Bình Chánh, Hồ Chí Minh",
-        "longitude": "106.543767",
-        "latitude": "10.796331"
-    },
-    {
-        "location": "Quận 8, Hồ Chí Minh",
-        "longitude": "-61.55864",
-        "latitude": "10.710873"
-    },
-    {
-        "location": "Quận 10, Hồ Chí Minh",
-        "longitude": "106.660431",
-        "latitude": "10.771075"
+        "longitude": 106.73542207700007,
+        "latitude": 10.711520332000077
     },
     {
         "location": "Bình Thạnh, Hồ Chí Minh",
-        "longitude": "106.70315",
-        "latitude": "10.808551"
-    },
-    {
-        "location": "Phú Nhuận, Hồ Chí Minh",
-        "longitude": "106.66798",
-        "latitude": "10.802075"
-    },
-    {
-        "location": "Gò Vấp, Hồ Chí Minh",
-        "longitude": "106.660342",
-        "latitude": "10.840754"
-    },
-    {
-        "location": "Củ Chi, Hồ Chí Minh",
-        "longitude": "106.46667",
-        "latitude": "10.96667"
+        "longitude": 106.696036,
+        "latitude": 10.809945
     },
     {
         "location": "Tân Bình, Hồ Chí Minh",
-        "longitude": "106.63832",
-        "latitude": "10.81691"
+        "longitude": 106.645953,
+        "latitude": 10.7855621
+    },
+    {
+        "location": "Quận 12, Hồ Chí Minh",
+        "longitude": 106.63525101300007,
+        "latitude": 10.87391583300007
+    },
+    {
+        "location": "Quận 10, Hồ Chí Minh",
+        "longitude": 106.66652754600005,
+        "latitude": 10.767551807000075
+    },
+    {
+        "location": "Quận 9, Hồ Chí Minh",
+        "longitude": 106.77144860700008,
+        "latitude": 10.839717847000031
     },
     {
         "location": "Quận 4, Hồ Chí Minh",
-        "longitude": "106.703296",
-        "latitude": "10.759676"
+        "longitude": 106.70628847900008,
+        "latitude": 10.766483865000055
+    },
+    {
+        "location": "Bình Chánh, Hồ Chí Minh",
+        "longitude": 106.59261500000008,
+        "latitude": 10.694791000000066
     },
     {
         "location": "Quận 1, Hồ Chí Minh",
-        "longitude": "106.698089",
-        "latitude": "10.777353"
+        "longitude": 106.7036788,
+        "latitude": 10.7840071
     },
     {
-        "location": "Quận 6, Hồ Chí Minh",
-        "longitude": "106.623766",
-        "latitude": "10.743329"
-    },
-    {
-        "location": "Quận 3, Hồ Chí Minh",
-        "longitude": "106.678627",
-        "latitude": "10.784274"
-    },
-    {
-        "location": "Cần Giờ, Hồ Chí Minh",
-        "longitude": "106.96667",
-        "latitude": "10.41667"
+        "location": "Bình Tân, Hồ Chí Minh",
+        "longitude": 106.61470337700007,
+        "latitude": 10.737114889000054
     },
     {
         "location": "Hóc Môn, Hồ Chí Minh",
-        "longitude": "106.56819",
-        "latitude": "10.883824"
+        "longitude": 106.59552900000006,
+        "latitude": 10.889495000000068
     },
     {
-        "location": "Quận 11, Hồ Chí Minh",
-        "longitude": "106.641724",
-        "latitude": "10.762131"
+        "location": "Gò Vấp, Hồ Chí Minh",
+        "longitude": 106.6679966,
+        "latitude": 10.8360528
+    },
+    {
+        "location": "Quận 8, Hồ Chí Minh",
+        "longitude": 106.66585882900006,
+        "latitude": 10.740407144000073
     },
     {
         "location": "Nhà Bè, Hồ Chí Minh",
-        "longitude": "106.73611",
-        "latitude": "10.70694"
+        "longitude": 106.73308535800004,
+        "latitude": 10.673732011000027
     },
     {
-        "location": "Quận 5, Hồ Chí Minh",
-        "longitude": "106.66667",
-        "latitude": "10.75"
+        "location": "Quận 3, Hồ Chí Minh",
+        "longitude": 106.667641,
+        "latitude": 10.7855288
+    },
+    {
+        "location": "Thủ Đức, Hồ Chí Minh",
+        "longitude": 106.7665649,
+        "latitude": 10.8406049
+    },
+    {
+        "location": "Phú Nhuận, Hồ Chí Minh",
+        "longitude": 106.6826659,
+        "latitude": 10.7952571
     }
 ]
