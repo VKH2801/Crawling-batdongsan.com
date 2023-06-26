@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import pprint
 from selenium import webdriver
 import json
 
