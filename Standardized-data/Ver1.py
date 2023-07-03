@@ -25,6 +25,9 @@ for i in range(len(data_input)):
     rooms = random.randint(1, 4)
     type_geometry = data_input[i]['geometry']['type']
     coordinates = data_input[i]['geometry']['coordinates']
+    coordinates_numbers = []
+    for i in coordinates:
+        coordinates_numbers.append(float(i))
 
     item = {
         'type': 'Feature',
@@ -54,9 +57,10 @@ for i in range(len(data_input)):
         },
         'geometry': {
             'type': type_geometry,
-            'coordinates': coordinates,
+            'coordinates': coordinates_numbers,
         }
     }
+    # print(item)
     list_result.append(item)
 
     
