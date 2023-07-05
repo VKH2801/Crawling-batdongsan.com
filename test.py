@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import pprint
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 import json
 
 #Lay noi dung trang web
@@ -12,31 +13,12 @@ list_links_base = []
 list_properties_info = []
 list_districts_info = []
 
-# # Khởi tạo đối tượng Chrome WebDriver
-# driver = webdriver.Chrome('/path/to/chromedriver')
-
-# # Truy cập trang web
-# driver.get(base_url)
-
-# # Chờ cho trang web tải hoàn tất và thông báo "just a moment..." biến mất
-# driver.implicitly_wait(10)
-
-# # Lấy nội dung của trang web
-# html_content = driver.page_source
-
-# # Tạo đối tượng BeautifulSouptừ nội dung HTML
-# try : 
-#     soup = BeautifulSoup(html_content, 'html.parser')
-# except:
-#     print("Can't connect to server url:" + base_url)
-
-
 for one in range(1, 2):
     list_links_base.append(base_url + '/p' + str(one))
 
 for index in range(len(list_links_base)) : 
     # Khởi tạo đối tượng Chrome WebDriver
-    driver = webdriver.Chrome('/path/to/chromedriver')
+    driver = webdriver.Chrome(service = Service('/path/to/chromedriver'))
 
     # Truy cập trang web
     driver.get(list_links_base[index])
@@ -77,17 +59,6 @@ for index in range(len(list_links_base)) :
         else:
             if acreages[i] == '':
                 acreages[i] = None
-        
-
-        
-        # if i >= len(prices_per_m2):
-        #     prices_per_m2.append('')
-        # try:
-        #     if(prices_per_m2[i] == ''):
-        #         prices_per_m2[i] = None
-        # except IndexError:
-        #     prices_per_m2.append('')
-
         item = {
             "price": prices[i],
             "acreage": acreages[i],        
@@ -98,8 +69,6 @@ for index in range(len(list_links_base)) :
     for i in list_properties_info: 
         if (i['price'] == 'Giá thỏa thuận'): 
             list_properties_info.pop(list_properties_info.index(i))
-        # if (i['price Per m2'] == ''):
-        #     list_properties_info.pop(list_properties_info.index(i))
 
 
     json_data = json.dumps(list_properties_info)
@@ -111,7 +80,7 @@ for index in range(len(list_links_base)) :
 
     
 
-with open('list_properties_test.json', 'w', encoding='utf-8') as outfile:
+with open('test_Data.json', 'w', encoding='utf-8') as outfile:
     json.dump(list_properties_info, outfile, ensure_ascii=False)
 
 

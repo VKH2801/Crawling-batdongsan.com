@@ -31,7 +31,7 @@ except:
     print("Can't connect to server url:" + base_url)
 
 
-for one in range(1, 2000):
+for one in range(1, 3):
     list_links_base.append(base_url + '/p' + str(one))
 
 for index in range(len(list_links_base)) : 

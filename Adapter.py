@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 import json
 
 
@@ -24,12 +25,12 @@ list_properties_info = []
 list_districts_info = []
 
 
-for one in range(1, 1001):
+for one in range(1, 3):
     list_links_base.append(base_url + '/p' + str(one))
 
 for index in range(len(list_links_base)) : 
     # Khởi tạo đối tượng Chrome WebDriver
-    webdriver_adapter = WebDriverAdapter(webdriver.Chrome('/path/to/chromedriver'))
+    webdriver_adapter = WebDriverAdapter(webdriver.Chrome(service = Service('path/to/chromedriver')))
     # Truy cập trang web
     html_content = webdriver_adapter.get_html_content(list_links_base[index])
 
@@ -83,5 +84,5 @@ for index in range(len(list_links_base)) :
     print("============================================================")
 
 
-with open('list_properties_with_format.json', 'w', encoding='utf-8') as outfile:
+with open('Adapter_Data.json', 'w', encoding='utf-8') as outfile:
     json.dump(list_properties_info, outfile, ensure_ascii=False)
